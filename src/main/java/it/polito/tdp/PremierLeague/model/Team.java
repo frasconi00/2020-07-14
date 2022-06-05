@@ -3,11 +3,13 @@ package it.polito.tdp.PremierLeague.model;
 public class Team {
 	Integer teamID;
 	String name;
+	int punteggioFinale;
 
 	public Team(Integer teamID, String name) {
 		super();
 		this.teamID = teamID;
 		this.name = name;
+		this.punteggioFinale=0;
 	}
 	
 	public Integer getTeamID() {
@@ -22,8 +24,14 @@ public class Team {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	
+
+	public int getPunteggioFinale() {
+		return punteggioFinale;
+	}
+
+	public void setPunteggioFinale(int punteggioFinale) {
+		this.punteggioFinale = punteggioFinale;
+	}
 
 	@Override
 	public String toString() {
